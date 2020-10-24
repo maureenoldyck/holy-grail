@@ -1,0 +1,144 @@
+body {
+    color: black;
+    background-color: coral;
+    line-height: 25px;
+    font-size: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Grandstander', cursive;
+    color: #f1c928;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #e13c2c;
+}
+
+a:hover {
+    color: white;
+}
+
+/*** classes ***/
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: coral;
+    color: black;
+    flex: 1 100%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.header-image {
+    max-height: 200px;
+
+}
+
+
+.nav,
+.aside {
+    background-color: beige;
+    flex: 1;
+}
+
+.main {
+    background-color: antiquewhite;
+    flex: 5;
+    display: block;
+}
+
+.nav,
+.aside,
+.main {
+    align-items: center;
+    display: flex;
+    min-height: 500px;
+    margin: 5px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    flex: 1 100%;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.buttons>* {
+    border: 2px solid #e13c2c;
+    margin: 15px;
+    padding: 15px;
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: #e13c2c;
+    color: white;
+}
+
+.images > * {
+    display: block;
+    max-width: 100%;
+    border: 1px solid lightgray;
+}
+
+.image-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.polaroid {
+    background-color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*** media queries ***/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 10px;
+    }
+
+h2 {
+    font-size: 15px;
+}
+
+    .nav,
+    .aside {
+        flex: 1 100%;
+        min-height: auto;
+    }
+
+    .main {
+        flex: 1 100%;
+    }
+
+}

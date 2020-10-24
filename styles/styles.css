@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    color: royalblue;
+    font-family: 'Grandstander', cursive;
+}
+
+body {
+    font-family: 'Grandstander', cursive;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+a {
+    font-size: 20px;
+    
+}
+
+
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:peachpuff ;
+border-radius: 5px;
+margin-left: 150px;
+margin-top: 150px;
+padding: 15px;
+list-style-type:none ;
+text-align: center;
+float: left;
+min-height: 300px;
+border: 2px solid black;
+
+}
+
+
+.images > * {
+    display: block;
+    max-width: 100%;
+    border: 1px solid lightgray;
+}
+
+.image-text {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.polaroid {
+    background-color: white;
+    margin-bottom: 25px;
+align-items: center;
+}

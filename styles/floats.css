@@ -1,0 +1,159 @@
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    color: black;
+    background-color: #f1c928;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+h2, h3, h5 {
+    font-family: 'Grandstander', cursive;
+    text-align: center;
+}
+
+h2, h3 {
+    color:#9162aa
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+li > * {
+    color: black;
+}
+
+p {
+    line-height: 25px;
+}
+
+
+
+
+/*** classes ***/
+
+.header {
+    background-color: #f1c928;
+    color: black;
+    width: inherit;
+    text-align: center;
+}
+
+.nav,
+.aside {
+    background-color: #e4dfd6;
+    width: 15%;
+    float: left;
+    padding: 10px;
+}
+
+.main {
+    background-color: antiquewhite;
+    float: left;
+    width: 70%;
+    padding: 10px;
+    min-height: 500px;
+}
+
+.footer {
+    background-color: #73bb54;
+    color: white;
+    width: initial;
+    height: 50px;
+    clear: both;
+    padding: 2px;
+}
+
+.all {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+}
+
+.container {
+    width: inherit;
+    height: 500px;
+    
+}
+
+.container > * {
+    border: 5px solid  #f1c928;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.buttons > * {
+border: 2px solid #73bb54 ;
+border-radius: 5px;
+margin: 15px;
+padding: 15px;
+cursor: pointer;
+list-style-type:none ;
+text-align: center;
+
+}
+
+.button:hover {
+background-color: #73bb54;
+}
+
+.images > * {
+    display: block;
+    max-width: 100%;
+    border: 1px solid lightgray;
+}
+
+.image-text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.polaroid {
+    background-color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*** media queries ***/
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        font-size: 12px;
+    }
+    
+    .container > * {
+        width: 100%;
+    }
+
+    .musti-header {
+        width: 50%;
+    }
+    .nav, .aside {
+        height: auto;
+    }
+
+    .polaroid {
+        width: 50%;
+    }    
+    .image-text {
+        font-size: 12px;
+    }
+}
